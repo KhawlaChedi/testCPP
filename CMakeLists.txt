@@ -12,4 +12,6 @@ add_executable(testCPP main.cpp
         Pokedex.h
         Pokeball.cpp
         Pokeball.h
+        PokemonParty.cpp
+        PokemonParty.h
 )
