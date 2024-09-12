@@ -25,7 +25,7 @@ public:
     Pokemon(const string name);
     Pokemon(const string name, int id, double hitPoint, double attack, double defense, int generation);
     Pokemon(const Pokemon& anotherPokemon);
-    void attack(Pokemon& anotherPokemon);
+    void attack(Pokemon* anotherPokemon);
     void scream();
     void displayInfo();
     //getters

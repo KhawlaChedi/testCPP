@@ -85,6 +85,60 @@ build CMakeFiles/testCPP.dir/PokemonParty.cpp.obj: CXX_COMPILER__testCPP_unscann
   OBJECT_DIR = CMakeFiles\testCPP.dir
   OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
 
+build CMakeFiles/testCPP.dir/State.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/State.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\State.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/Attente.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/Attente.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\Attente.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/Player.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/Player.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\Player.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/Init.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/Init.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\Init.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/Game.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/Game.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\Game.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/NoDanger.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/NoDanger.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\NoDanger.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/Danger.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/Danger.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\Danger.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/Battle.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/Battle.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\Battle.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
+build CMakeFiles/testCPP.dir/EndGame.cpp.obj: CXX_COMPILER__testCPP_unscanned_Debug D$:/testCPP/EndGame.cpp || cmake_object_order_depends_target_testCPP
+  DEP_FILE = CMakeFiles\testCPP.dir\EndGame.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\testCPP.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target testCPP
@@ -93,7 +147,7 @@ build CMakeFiles/testCPP.dir/PokemonParty.cpp.obj: CXX_COMPILER__testCPP_unscann
 #############################################
 # Link the executable testCPP.exe
 
-build testCPP.exe: CXX_EXECUTABLE_LINKER__testCPP_Debug CMakeFiles/testCPP.dir/main.cpp.obj CMakeFiles/testCPP.dir/Pokemon.cpp.obj CMakeFiles/testCPP.dir/SetOfPokemon.cpp.obj CMakeFiles/testCPP.dir/Pokedex.cpp.obj CMakeFiles/testCPP.dir/Pokeball.cpp.obj CMakeFiles/testCPP.dir/PokemonParty.cpp.obj
+build testCPP.exe: CXX_EXECUTABLE_LINKER__testCPP_Debug CMakeFiles/testCPP.dir/main.cpp.obj CMakeFiles/testCPP.dir/Pokemon.cpp.obj CMakeFiles/testCPP.dir/SetOfPokemon.cpp.obj CMakeFiles/testCPP.dir/Pokedex.cpp.obj CMakeFiles/testCPP.dir/Pokeball.cpp.obj CMakeFiles/testCPP.dir/PokemonParty.cpp.obj CMakeFiles/testCPP.dir/State.cpp.obj CMakeFiles/testCPP.dir/Attente.cpp.obj CMakeFiles/testCPP.dir/Player.cpp.obj CMakeFiles/testCPP.dir/Init.cpp.obj CMakeFiles/testCPP.dir/Game.cpp.obj CMakeFiles/testCPP.dir/NoDanger.cpp.obj CMakeFiles/testCPP.dir/Danger.cpp.obj CMakeFiles/testCPP.dir/Battle.cpp.obj CMakeFiles/testCPP.dir/EndGame.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\testCPP.dir

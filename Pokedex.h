@@ -15,6 +15,9 @@ public:
     static Pokedex* getInstance(const std::string& filename); // Singleton
     Pokemon* getOnePokemonByName(string name);
     Pokemon* getOnePokemonById(int id);
+    int getMaxIndex();
+
+
     ~Pokedex();
 };
 

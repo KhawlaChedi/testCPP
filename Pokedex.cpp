@@ -6,6 +6,7 @@
 #include <iostream>
 #include <sstream>
 #include "Pokedex.h"
+
 Pokedex* Pokedex::instance = nullptr;
 
 Pokedex::Pokedex(string fileName):SetOfPokemon() {
@@ -60,6 +61,20 @@ Pokemon* Pokedex::getOnePokemonById(int id) {
     }
     return nullptr;
 }
+
+int Pokedex::getMaxIndex() {
+    int maxIndex = 0;
+    for (int i = 0; i < arrayOfPokemon.size(); i++) {
+        if(arrayOfPokemon.at(i)->getId()>maxIndex) {
+            maxIndex = arrayOfPokemon.at(i)->getId();
+        }
+    }
+    return maxIndex;
+}
+
+
+
+
 
 Pokedex::~Pokedex(){
 

@@ -3,6 +3,12 @@
 #include "Pokemon.h"
 
 #include <vector>
+
+#include "Battle.h"
+#include "Danger.h"
+#include "Game.h"
+#include "Init.h"
+#include "NoDanger.h"
 #include "Pokedex.h"
 
 int main() {
@@ -53,7 +59,7 @@ int main() {
 
     /////////////test de pokedex autrement
     /// std::cout << "******* Pokemon test *******" << std::endl;
-
+/*
    Pokedex *pokedexInstance = Pokedex::getInstance("../ressources/pokedex.csv");
    Pokedex *pokedexInstanceNumber2 = Pokedex::getInstance("../ressources/pokedex.csv");
 
@@ -66,7 +72,20 @@ int main() {
     testGet = Pokedex::getInstance("../ressources/pokedex.csv")->getOnePokemonByName("Mewtwo");
     testGet->displayInfo();
 
-    std::cout <<"Nombre de Pokemon en memoire : " << Pokemon::getNumberOfPokemon() << std::endl;
+    std::cout <<"Nombre de Pokemon en memoire : " << Pokemon::getNumberOfPokemon() << std::endl; */
+
+
+
+    /////////////////////////Main Final du jeu//////////////////
+    Game *game=new Game();
+    game->setState(new Init());
+    game->request();
+    game->setState(new NoDanger());
+    game->request();
+    game->setState(new Danger());
+    game->request();
+    game->setState(new Battle());
+    game->request();
 
 
 

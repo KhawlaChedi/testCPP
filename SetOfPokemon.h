@@ -17,6 +17,9 @@ class SetOfPokemon {
     virtual Pokemon* getOnePokemonById(int id)=0;
     void displayList();
     SetOfPokemon();
+    int getSizeOfArrayPokemon();
+    bool hasPokemonWithID(int id);
+    std::pair<int, int> getMinMaxPokemonID() ;
 
     // virtual ~SetOfPokemon();
 };

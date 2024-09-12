@@ -38,9 +38,9 @@ Pokemon::~Pokemon() {
     numberOfPokemon--;
 }
 
-void Pokemon::attack(Pokemon &anotherPokemon) {
-    if (this->attackValue > anotherPokemon.defense){
-        anotherPokemon.sustainDamage(this->attackValue-anotherPokemon.defense);
+void Pokemon::attack(Pokemon *anotherPokemon) {
+    if (this->attackValue > anotherPokemon->defense){
+        anotherPokemon->sustainDamage(this->attackValue-anotherPokemon->defense);
     }
     else{
         std::cout << "Attack missed ! " << std::endl;

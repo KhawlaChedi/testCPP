@@ -5,6 +5,8 @@
 #include "SetOfPokemon.h"
 
 #include <iostream>
+#include <utility>  // Pour std::pair
+#include <algorithm>
 
 void SetOfPokemon::displayList() {
     std::cout << "*********************************"<< std::endl;
@@ -37,4 +39,35 @@ int SetOfPokemon::findPokemonByName(string name) {
     return -1;
 
 }
+
+int SetOfPokemon::getSizeOfArrayPokemon() {
+    return arrayOfPokemon.size();
+}
+
+bool SetOfPokemon::hasPokemonWithID(int id) {
+    for (Pokemon *p : arrayOfPokemon) {
+        if (p->getId() == id) {
+            return true;
+        }
+    }
+    return false;
+}
+std::pair<int, int> SetOfPokemon::getMinMaxPokemonID() {
+    if (this->arrayOfPokemon.empty()) {
+        throw std::runtime_error("Aucun Pokémon dans le Pokedex !");
+    }
+
+    // Trier les Pokémon par ID
+    std::sort(this->arrayOfPokemon.begin(), this->arrayOfPokemon.end(), [](Pokemon* a, Pokemon* b) {
+        return a->getId() < b->getId();
+    });
+
+    // ID minimum et maximum
+    int minID = this->arrayOfPokemon.front()->getId();
+    int maxID = this->arrayOfPokemon.back()->getId();
+
+    return {minID, maxID};
+}
+
+
 
