@@ -18,7 +18,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
 
     // Obtenir l'ID min et max après le tri des Pokémon du joueur 1
     std::pair<int, int> minMax1 = player1->getPokeball()->getMinMaxPokemonID();
-    std::cout << "Veuillez choisir des Pokémon avec des IDs entre " << minMax1.first << " et " << minMax1.second << std::endl;
+    std::cout << "Veuillez choisir des Pokemon avec des IDs entre " << minMax1.first << " et " << minMax1.second << std::endl;
 
     int i = 0;
     while (i < 6) {
@@ -31,7 +31,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
             list1.push_back(id1);  // Ajouter l'ID à la liste
             i++;
         } else {
-            std::cout << "****** L'ID n'est pas valide ou vous ne possédez pas ce Pokémon !!!! ******" << std::endl;
+            std::cout << "****** L'ID n'est pas valide ou vous ne possedez pas ce Pokemon !!!! ******" << std::endl;
         }
     }
 
@@ -43,7 +43,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
 
     // Obtenir l'ID min et max après le tri des Pokémon du joueur 2
     std::pair<int, int> minMax2 = player2->getPokeball()->getMinMaxPokemonID();
-    std::cout << "Veuillez choisir des Pokémon avec des IDs entre " << minMax2.first << " et " << minMax2.second << std::endl;
+    std::cout << "Veuillez choisir des Pokemon avec des IDs entre " << minMax2.first << " et " << minMax2.second << std::endl;
 
     int j = 0;
     while (j < 6) {
@@ -56,7 +56,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
             list2.push_back(id2);  // Ajouter l'ID à la liste
             j++;
         } else {
-            std::cout << "****** L'ID n'est pas valide ou vous ne possédez pas ce Pokémon !!!! ******" << std::endl;
+            std::cout << "****** L'ID n'est pas valide ou vous ne possedez pas ce Pokemon !!!! ******" << std::endl;
         }
     }
     PokemonParty *p2= new PokemonParty(list2.at(0), list2.at(1), list2.at(2), list2.at(3), list2.at(4), list2.at(5),player2->getPokeball());
