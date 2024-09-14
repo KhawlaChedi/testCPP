@@ -6,6 +6,7 @@
 
 #include "Battle.h"
 #include "Danger.h"
+#include "EndGame.h"
 #include "Game.h"
 #include "Init.h"
 #include "NoDanger.h"
@@ -85,6 +86,12 @@ int main() {
     game->setState(new Danger());
     game->request();
     game->setState(new Battle());
+    game->request();
+    game->setState(new Battle());
+    game->request();
+    game->setState(new Battle());
+    game->request();
+    game->setState(new EndGame());
     game->request();
 
 

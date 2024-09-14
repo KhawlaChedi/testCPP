@@ -16,7 +16,8 @@ public:
     Pokemon* getOnePokemonByName(string name);
     Pokemon* getOnePokemonById(int id);
 
-    void removePokemon(int index);
+
+   /* void removePokemon(int index);*/
 };
 
 

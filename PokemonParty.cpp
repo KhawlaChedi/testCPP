@@ -49,7 +49,9 @@ Pokemon* PokemonParty::getOnePokemonById(int indiceToFind) {
     return nullptr;
 }
 
+/*
 void PokemonParty::removePokemon(int index) {
     arrayOfPokemon.erase(arrayOfPokemon.begin()+index);
 }
 
+*/

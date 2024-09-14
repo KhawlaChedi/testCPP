@@ -7,8 +7,9 @@
 #include "State.h"
 
 
-class EndGame : State {
+class EndGame : public State {
 public:
+
     void handelRequest(Player*& player1,Player*& player2) override;
 
 };

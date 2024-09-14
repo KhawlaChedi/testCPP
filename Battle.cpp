@@ -22,7 +22,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
 
     int i = 0;
     while (i < 6) {
-        std::cout << "Entrez l'ID de votre Pokémon : " << std::endl;
+        std::cout << "Entrez l'ID de votre Pokemon : " << std::endl;
         int id1;
         std::cin >> id1;
 
@@ -47,7 +47,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
 
     int j = 0;
     while (j < 6) {
-        std::cout << "Entrez l'ID de votre Pokémon : " << std::endl;
+        std::cout << "Entrez l'ID de votre Pokemon : " << std::endl;
         int id2;
         std::cin >> id2;
 
@@ -63,31 +63,47 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
 
     std::cout << "********* Le combat commence !! *********** " << std::endl;
 
-    for (int k = 0; k < p1->getSizeOfArrayPokemon(); k++) {
+
+    for (int k = 0; k < 6; k++) {
         while (p1->getOnePokemonById(k)->getHitPoint()!=0 && p2->getOnePokemonById(k)->getHitPoint()!=0) {
-            p1->getOnePokemonById(k)->attack(p2->getOnePokemonById(k));
+            if(p1->getOnePokemonById(k)->getattack()>p2->getOnePokemonById(k)->getdefense()) {
+                p1->getOnePokemonById(k)->attack(p2->getOnePokemonById(k));
+            }
+            else if(p2->getOnePokemonById(k)->getattack()>p1->getOnePokemonById(k)->getdefense()) {
+                p2->getOnePokemonById(k)->attack(p1->getOnePokemonById(k));
+            }
+
+
         }
-        if (p1->getOnePokemonById(k)->getHitPoint()==0) {
+     /*  if (p1->getOnePokemonById(k)->getHitPoint()==0 ) {
             p1->removePokemon(k);
         }
         if (p2->getOnePokemonById(k)->getHitPoint()==0) {
             p2->removePokemon(k);
-        }
+        }*/
 
     }
-    if (p1->getSizeOfArrayPokemon()>p2->getSizeOfArrayPokemon()) {
+    int nbHitPoints1=0;
+    int nbHitPoints2=0;
+    /*ici*/
+    for (int l = 0; l < p1->getSizeOfArrayPokemon(); l++) {
+        nbHitPoints1+=p1->getOnePokemonById(l)->getHitPoint();
+    }
+    for (int m = 0; m < p2->getSizeOfArrayPokemon(); m++) {
+        nbHitPoints2+=p2->getOnePokemonById(m)->getHitPoint();
+    }
+
+    if (nbHitPoints1>nbHitPoints2) {
         nbWinP1++;
-        std::cout<<"******* Wohoooo!! Joueur 1 gagne la partie !! ***********"<<std::endl;
+        std::cout<<"******* Wohoooo!! Joueur 1 gagne ce combat !! ***********"<<std::endl;
     }
-    else if(p1->getSizeOfArrayPokemon()<p2->getSizeOfArrayPokemon()) {
+    else if(nbHitPoints1<nbHitPoints2) {
         nbWinP2++;
-        std::cout<<"******* Wohoooo!! Joueur 2 gagne la partie !! ***********"<<std::endl;
+        std::cout<<"******* Wohoooo!! Joueur 2 gagne ce combat !! ***********"<<std::endl;
     }
-    else if(p1->getSizeOfArrayPokemon()==p2->getSizeOfArrayPokemon()) {
-        std::cout<<"******* Egaliteeee !! ***********"<<std::endl;
+    else if(nbHitPoints1==nbHitPoints2) {
+        std::cout<<"******* Egaliteeee !! Combat nulllllll ***********"<<std::endl;
     }
-
-
 
 
 }
