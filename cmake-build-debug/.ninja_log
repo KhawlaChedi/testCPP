@@ -30,3 +30,10 @@
 8	497	7480159160780727	CMakeFiles/testCPP.dir/EndGame.cpp.obj	d6714b2d0466366e
 5	542	7480159160751629	CMakeFiles/testCPP.dir/main.cpp.obj	f3919ebc78b53d15
 542	684	7480159166116127	testCPP.exe	bfb24b9b8a4431cf
+5	473	7480163249564647	CMakeFiles/testCPP.dir/main.cpp.obj	f3919ebc78b53d15
+9	494	7480163249594644	CMakeFiles/testCPP.dir/Battle.cpp.obj	4a0e6ae8ff0bfa2d
+494	625	7480163254454639	testCPP.exe	bfb24b9b8a4431cf
+6	597	7480170971929123	CMakeFiles/testCPP.dir/NoDanger.cpp.obj	d15da12ad8947f17
+10	617	7480170971978378	CMakeFiles/testCPP.dir/Danger.cpp.obj	7b285368d566edb3
+14	663	7480170972018367	CMakeFiles/testCPP.dir/Battle.cpp.obj	4a0e6ae8ff0bfa2d
+663	795	7480170978508364	testCPP.exe	bfb24b9b8a4431cf

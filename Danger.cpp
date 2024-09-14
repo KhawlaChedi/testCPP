@@ -10,6 +10,8 @@
 #include <ctime>    // For time()
 
 void Danger::handelRequest(Player*& player1,Player*& player2) {
+    std::cout<<"---------------------------------------"<<std::endl;
+
     std::cout << "******* Hoooooooo !! Danger Zooone !! ********" << std::endl;
 
     std::cout << "********* Hellooo Joueur num 2 *********" << std::endl;
@@ -29,6 +31,7 @@ void Danger::handelRequest(Player*& player1,Player*& player2) {
         int randomVal2 = (std::rand() % pokedexGame->getMaxIndex()) + 1;
         player2->getPokeball()->attrapePokemon(pokedexGame,randomVal2);
     }
+    std::cout<<"---------------------------------------"<<std::endl;
     std::cout<< "-------- Votre Pokeball actuel " << std::endl;
     player2->getPokeball()->displayList();
 }

@@ -16,4 +16,5 @@ void Init::handelRequest(Player*& player1,Player*& player2) {
     std::cin >> nomSVP;
     player1 = new Player(nomSVP);
     nbWinP1=0;
+
 }

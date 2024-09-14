@@ -10,8 +10,14 @@
 #include "PokemonParty.h"
 
 void Battle::handelRequest(Player*& player1,Player*& player2) {
+
+    std::cout<<"---------------------------------------"<<std::endl;
+
     std::cout << "******** BooooMMM !! Fighhhhhhht !!!! *********" << std::endl;
     std::cout << "******** Choisissez 6 de vos Pokemon !!! ********"<< std::endl;
+
+    std::cout<<"---------------------------------------"<<std::endl;
+
     // Joueur 1
     std::cout << "********* Joueur 1  : " << std::endl;
     std::vector<int> list1;
@@ -37,6 +43,8 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
 
     PokemonParty *p1= new PokemonParty(list1.at(0), list1.at(1), list1.at(2), list1.at(3), list1.at(4), list1.at(5),player1->getPokeball());
 
+    std::cout<<"---------------------------------------"<<std::endl;
+
     // Joueur 2
     std::cout << "********* Joueur 2  : " << std::endl;
     std::vector<int> list2;
@@ -61,6 +69,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
     }
     PokemonParty *p2= new PokemonParty(list2.at(0), list2.at(1), list2.at(2), list2.at(3), list2.at(4), list2.at(5),player2->getPokeball());
 
+    std::cout<<"---------------------------------------"<<std::endl;
     std::cout << "********* Le combat commence !! *********** " << std::endl;
 
 
@@ -93,6 +102,8 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
         nbHitPoints2+=p2->getOnePokemonById(m)->getHitPoint();
     }
 
+    std::cout<<"---------------------------------------"<<std::endl;
+
     if (nbHitPoints1>nbHitPoints2) {
         nbWinP1++;
         std::cout<<"******* Wohoooo!! Joueur 1 gagne ce combat !! ***********"<<std::endl;
@@ -104,11 +115,11 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
     else if(nbHitPoints1==nbHitPoints2) {
         std::cout<<"******* Egaliteeee !! Combat nulllllll ***********"<<std::endl;
     }
-
+    std::cout<<"---------------------------------------"<<std::endl;
     std::cout<<"*********  Pokeball 1  apres le combat :"<<std::endl;
-    p1->displayList();
+    player1->getPokeball()->displayList();
     std::cout<<"*********  Pokeball 2  apres le combat :"<<std::endl;
-    p2->displayList();
+    player2->getPokeball()->displayList();
 
 
 
