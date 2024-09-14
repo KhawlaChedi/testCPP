@@ -94,7 +94,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
     }
     int nbHitPoints1=0;
     int nbHitPoints2=0;
-    /*ici*/
+
     for (int l = 0; l < p1->getSizeOfArrayPokemon(); l++) {
         nbHitPoints1+=p1->getOnePokemonById(l)->getHitPoint();
     }
@@ -102,17 +102,20 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
         nbHitPoints2+=p2->getOnePokemonById(m)->getHitPoint();
     }
 
-    std::cout<<"---------------------------------------"<<std::endl;
+
 
     if (nbHitPoints1>nbHitPoints2) {
         nbWinP1++;
+        std::cout<<"---------------------------------------"<<std::endl;
         std::cout<<"******* Wohoooo!! Joueur 1 gagne ce combat !! ***********"<<std::endl;
     }
     else if(nbHitPoints1<nbHitPoints2) {
         nbWinP2++;
+        std::cout<<"---------------------------------------"<<std::endl;
         std::cout<<"******* Wohoooo!! Joueur 2 gagne ce combat !! ***********"<<std::endl;
     }
     else if(nbHitPoints1==nbHitPoints2) {
+        std::cout<<"---------------------------------------"<<std::endl;
         std::cout<<"******* Egaliteeee !! Combat nulllllll ***********"<<std::endl;
     }
     std::cout<<"---------------------------------------"<<std::endl;
