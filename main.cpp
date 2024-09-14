@@ -87,12 +87,14 @@ int main() {
     game->request();
     game->setState(new Battle());
     game->request();
-   /* game->setState(new Battle());
+ /*   game->setState(new Battle());
     game->request();
     game->setState(new Battle());
-    game->request();*/
-    game->setState(new EndGame());
-    game->request();
+    game->request(); */
+
+
+  /*  game->setState(new EndGame());
+    game->request(); */
 
 
 

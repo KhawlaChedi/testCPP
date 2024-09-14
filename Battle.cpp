@@ -121,6 +121,7 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
     std::cout<<"---------------------------------------"<<std::endl;
     std::cout<<"*********  Pokeball 1  apres le combat :"<<std::endl;
     player1->getPokeball()->displayList();
+    std::cout<<"---------------------------------------"<<std::endl;
     std::cout<<"*********  Pokeball 2  apres le combat :"<<std::endl;
     player2->getPokeball()->displayList();
 
