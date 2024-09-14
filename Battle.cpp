@@ -105,6 +105,12 @@ void Battle::handelRequest(Player*& player1,Player*& player2) {
         std::cout<<"******* Egaliteeee !! Combat nulllllll ***********"<<std::endl;
     }
 
+    std::cout<<"*********  Pokeball 1  apres le combat :"<<std::endl;
+    p1->displayList();
+    std::cout<<"*********  Pokeball 2  apres le combat :"<<std::endl;
+    p2->displayList();
+
+
 
 }
 
